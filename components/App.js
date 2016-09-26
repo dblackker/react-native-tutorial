@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, TextInput, Text } from 'react-native';
+import { ScrollView, Image, Text } from 'react-native';
+import favicon from '../img/favicon.png';
 
 class App extends Component {
   constructor(props) {
@@ -9,16 +10,39 @@ class App extends Component {
 
   render() {
     return (
-      <View style={{ padding: 10 }}>
-        <TextInput
-          style={{ height: 40 }}
-          placeholder="Type here to translate!"
-          onChangeText={text => this.setState({ text })}
-        />
-        <Text style={{ padding: 10, fontSize: 42 }}>
-          {this.state.text.split(' ').map(word => word && '🍕').join(' ')}
-        </Text>
-      </View>
+      <ScrollView>
+        <Text style={{ fontSize: 96 }}>Scroll me plz</Text>
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Text style={{ fontSize: 96 }}>If you like</Text>
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Text style={{ fontSize: 96 }}>Scrolling down</Text>
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Text style={{ fontSize: 96 }}>What's the best</Text>
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Text style={{ fontSize: 96 }}>Framework around?</Text>
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Image source={favicon} />
+        <Text style={{ fontSize: 80 }}>React Native</Text>
+      </ScrollView>
     );
   }
 }
